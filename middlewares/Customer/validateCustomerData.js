@@ -4,7 +4,7 @@ const validateCustomerData = [
     body('name').notEmpty().withMessage('please name is required'),
     body('lastName').notEmpty().withMessage('please lastname is required'),
     body('email').notEmpty().withMessage('please email is required'),
-    body('phone').notEmpty().withMessage('please phone is required').isNumeric().withMessage('please phone must be a number')
+    body('phone').notEmpty().withMessage('please phone is required')
 ];
 
 const handleValidationErrors = (req, res, next) => {
